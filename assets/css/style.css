@@ -1,0 +1,100 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+}
+.navbar {
+    grid-area: navbar;
+    background-color: rgb(112, 216, 152);
+    text-align: center;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo {
+    color: rgb(250, 250, 229);
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.aside {
+    grid-area: aside;
+    background-color: rgb(183, 212, 193);
+    /*height: 100vh ;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.aside_categoria {
+    font-size: 20px;
+    margin-left: 10px;
+    font-weight: 600;
+}
+.aside_option {
+    margin-left: 10px;
+}
+
+.cantidad {
+    font-weight: lighter;
+}
+
+.section{
+    grid-area: section;
+    background-color: rgb(217, 236, 227);
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.section_img {
+    width: 200px;
+    height: 200px;
+
+}
+
+.elemento {
+    font-weight: bold;
+}
+
+.card {
+    width: 300px;
+    height: 327px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+.button {
+    background-color: rgb(3, 68, 36);
+    color: rgb(250, 250, 229);
+    width: 100%;
+}
+
+
+.footer {
+    grid-area: footer;
+    background-color: rgb(27, 100, 63);
+    color: rgb(250, 250, 229);
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas: "navbar navbar" "aside section" "footer footer";
+    gap: 0px;
+    grid-template-rows: 1fr 6fr 0.4fr;
+    grid-template-columns: 1fr 5fr;
+    height: 100vh;
+  
+}
